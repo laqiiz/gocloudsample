@@ -1,5 +1,5 @@
 {
-	"TableName": "MyFirstTable",
+	"TableName": "MyTable",
 	"KeySchema": [
 		{
 			"AttributeName": "MyHashKey",
@@ -17,7 +17,7 @@
 		},
 		{
 			"AttributeName": "MyRangeKey",
-			"AttributeType": "S"
+			"AttributeType": "N"
 		}
 	],
 	"ProvisionedThroughput": {
