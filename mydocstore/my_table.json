@@ -1,0 +1,27 @@
+{
+	"TableName": "MyFirstTable",
+	"KeySchema": [
+		{
+			"AttributeName": "MyHashKey",
+			"KeyType": "HASH"
+		},
+		{
+			"AttributeName": "MyRangeKey",
+			"KeyType": "RANGE"
+		}
+	],
+	"AttributeDefinitions": [
+		{
+			"AttributeName": "MyHashKey",
+			"AttributeType": "S"
+		},
+		{
+			"AttributeName": "MyRangeKey",
+			"AttributeType": "S"
+		}
+	],
+	"ProvisionedThroughput": {
+		"ReadCapacityUnits": 10,
+		"WriteCapacityUnits": 10
+	}
+}
